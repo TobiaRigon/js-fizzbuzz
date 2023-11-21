@@ -20,6 +20,31 @@ for (let i = 1; i <= 100; i++) {
         output = i;
     }
 
-    // aggiungi direttamente l'HTML al container
-    container.innerHTML += `<div class="${String(output).toLowerCase()}">${output}</div>`;
+ // converti output in stringa
+ output = output.toString();
+
+
+
+
+ //============= appendChild
+ // Commenta le righe seguenti se si utilizza innerHTML
+
+ // crea un nuovo elemento div
+ let divElement = document.createElement("div");
+ // aggiungi la classe al div
+ divElement.className = output.toLowerCase();
+ // aggiungi il testo al div
+ divElement.textContent = output;
+
+ // utilizza appendChild per aggiungere il div al container
+ container.appendChild(divElement);
+ 
+
+
+
+ //=============== innerHTML
+ // Commenta le righe seguenti se si utilizza appendChild
+
+// // aggiungi direttamente l'HTML al container con innerHTML
+// container.innerHTML += `<div class="${String(output).toLowerCase()}">${output}</div>`;
 }
