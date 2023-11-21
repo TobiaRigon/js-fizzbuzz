@@ -13,10 +13,16 @@ body {
     font-family: Arial, sans-serif; 
 }
 
+h1{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 25px;
+}
+
 /* Stile del container */
 .container {
     margin: 20px auto; 
-    max-width: 80%; 
+    max-width: 70%; 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: flex-start; 
@@ -25,7 +31,7 @@ body {
 
 /* Stile dei div all'interno del container */
 .container div {
-    width: calc(14.28% - 10px); 
+    width: calc((100% / 7) - 10px); 
     margin: 5px; 
     text-align: center; 
     padding: 10px; 
@@ -48,4 +54,28 @@ body {
 /* Stile specifico per la classe FizzBuzz */
 .container .fizzbuzz {
     background-color: #ff6699; 
+}
+
+
+
+
+/* Responsive Layout */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%; /
+    }
+}
+@media only screen and (max-width: 700px) {
+   
+    .container div {
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media only screen and (max-width: 365px) {
+   
+    .container div {
+        width: calc((100% / 2) - 10px);
+    }
 }

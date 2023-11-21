@@ -3,10 +3,10 @@ let container = document.querySelector(".container");
 
 // crea ciclo i da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    // crea valore
+    // crea output
     let output = "";
 
-    // se divisibile sia per 3 che per 5 valore = FizzBuzz
+        // se divisibile sia per 3 che per 5 valore = FizzBuzz
     if (i % 3 === 0 && i % 5 === 0) {
         output = "FizzBuzz";
     } else if (i % 5 === 0) {
@@ -16,7 +16,7 @@ for (let i = 1; i <= 100; i++) {
         // se divisibile per 3 valore = Fizz
         output = "Fizz";
     } else {
-        // altrimenti valore = i
+        // altrimenti output = i
         output = i;
     }
 
