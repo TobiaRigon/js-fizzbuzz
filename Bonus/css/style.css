@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #37474F; 
+    color: #FFFFFF; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Stile del container */
+.container {
+    margin: 20px auto; 
+    max-width: 80%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+/* Stile dei div all'interno del container */
+.container div {
+    width: calc(14.28% - 10px); 
+    margin: 5px; 
+    text-align: center; 
+    padding: 10px; 
+    color: #FFFFFF; 
+    font-size: 16px;
+    font-weight: bold; 
+    background-color: #1E272E; 
+}
+
+/* Stile specifico per la classe Fizz */
+.container .fizz {
+    background-color: #ffcc00; 
+}
+
+/* Stile specifico per la classe Buzz */
+.container .buzz {
+    background-color: #66ccff; 
+}
+
+/* Stile specifico per la classe FizzBuzz */
+.container .fizzbuzz {
+    background-color: #ff6699; 
+}
